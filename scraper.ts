@@ -17,7 +17,7 @@ import didYouMean, * as didyoumean from "didyoumean2";
 
 sqlite3.verbose();
 
-const DevelopmentApplicationsUrl = "https://goyder.sa.gov.au/search?t=siteSearch&searchMode=results&searchCurrentSiteOnly=false&searchString=%22development+register+for+period%22";
+const DevelopmentApplicationsUrl = "https://goyder.sa.gov.au/search?t=siteSearch&searchMode=results&searchCurrentSiteOnly=false&resultsPerPage=100&searchString=%22development+register%22";
 const CommentUrl = "mailto:council@goyder.sa.gov.au";
 
 declare const process: any;
