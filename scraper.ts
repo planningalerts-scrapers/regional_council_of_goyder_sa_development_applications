@@ -1,4 +1,4 @@
-// Parses the development applications at the South Australian Regional Council of Goyder web site
+﻿// Parses the development applications at the South Australian Regional Council of Goyder web site
 // and places them in a database.
 //
 // Michael Bone
@@ -17,7 +17,7 @@ import didYouMean, * as didyoumean from "didyoumean2";
 
 sqlite3.verbose();
 
-const DevelopmentApplicationsUrl = "https://goyder.sa.gov.au/search?t=siteSearch&searchMode=results&searchCurrentSiteOnly=false&resultsPerPage=100&searchString=%22development+register%22";
+const DevelopmentApplicationsUrl = "https://www.goyder.sa.gov.au/search?t=siteSearch&searchMode=results&searchCurrentSiteOnly=false&resultsPerPage=100&searchString=%22development+register%22";
 const CommentUrl = "mailto:council@goyder.sa.gov.au";
 
 declare const process: any;
@@ -593,7 +593,7 @@ function parseAddress(houseNumber: string, streetName: string, suburbName: strin
     let address = addresses[0];
     return formatAddress(address.houseNumber, address.streetName, address.suburbName);
 }
-    
+
 // Returns a number indicating which address is "larger" (in this case "larger" means a "worse"
 // address).  This can be used to sort addresses so that "better" addresses, ie. those with a
 // house number and fewer spelling errors appear at the start of an array.
